@@ -8,7 +8,7 @@ def full_name(first_name, last_name, title)
 
   #if the user inputs all three arguments as values that are 'true' (almost anything besides false, nil, or a false statement), execute this if statement
   if title && first_name && last_name
-    #name variable now equals the title, first, and last names with spaces between them
+    #name variable now equals the title, first, and last names with spaces between them, however if the user input arguments that are not strings this will now throw an error because these + " " methods only work with strings
     name = title + " " + first_name + " " + last_name
 
   #if the first if statement isn't true, check if the user instead input title and last name arguments that are true, which will render this true and execute the code within
@@ -37,14 +37,15 @@ def full_name(first_name, last_name, title)
 end
 
 #TESTING THE METHOD
-puts full_name("sam", "wheeler", "mr.")
-puts full_name(false, "wheeler", "mr.")
-puts full_name("sam","wheeler",false)
-puts full_name("sam","wheeler",nil)
-puts full_name("sam","wheeler", 10 < 5)
-puts full_name("sam",false,false)
-puts full_name("sam", nil, "mr.")
-puts full_name(false, false, false)
+# puts full_name(1,2,3)
+# puts full_name("sam", "wheeler", "mr.")
+# puts full_name(false, "wheeler", "mr.")
+# puts full_name("sam","wheeler",false)
+# puts full_name("sam","wheeler",nil)
+# puts full_name("sam","wheeler", 10 < 5)
+# puts full_name("sam",false,false)
+# puts full_name("sam", nil, "mr.")
+# puts full_name(false, false, false)
 
 # Fix Broken Code
 
