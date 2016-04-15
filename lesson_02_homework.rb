@@ -49,17 +49,18 @@ end
 
 # Fix Broken Code
 
-# def full_name(f, l)
-#   puts f + l
-# end
+def full_name_two(f, l)
+  puts f + " " + l
+end
 
-# puts full_nam("bubba", "chuck")
+# full_name_two("bubba", "chuck")
 
 
 # Coding
 
 
 ## Enter your code for your 'add' method below
+
 
 
 
