@@ -16,17 +16,17 @@ def full_name(first_name, last_name, title)
     #name variable now equals the title and the last name with a space
     name = title + " " + last_name
 
-  #if the first two conditionals weren't true, check if the user instead input a first and last name, if true, execute this code within
+  #if the first two conditionals weren't true, check if the user instead input a first and last name that are true, if so, execute this code within
   elsif first_name && last_name
     #if that condition was true, variable name now equals the first and last names with a space between
     name = first_name + " " + last_name
 
-  #after these conditions have been checked, if the user has input their first name this will be true and execute the code within
+  #after these conditions have been checked, if the user has input their first name as any true value execute the code within
   elsif first_name
     #name variable equals just the first name
     name = first_name
 
-  #this handles all other possible cases, such as if the user just input a title, or input numbers
+  #this handles all other possible cases, such as if the user input all false
   else
     #the raise method will raise an exception, print the statement specified, and halt the method from running
     raise "Oh no, that doesn't look like a name"
@@ -53,7 +53,7 @@ def full_name_two(f, l)
   puts f + " " + l
 end
 
-# full_name_two("bubba", "chuck")
+full_name_two("bubba", "chuck")
 
 
 # Coding
@@ -61,14 +61,33 @@ end
 
 ## Enter your code for your 'add' method below
 
+def add(x, y)
+  return x + y
+end
 
-
+puts sum = add(1,2)
 
 
 ## Enter the code for you 'join_strings' method below
 
+def join_strings(a, b)
+  return a + " " + b
+end
 
-
+puts strings = join_strings("hello","world")
 
 
 ## Enter your 'old_enough_to_vote?' method below
+
+def old_enough_to_vote?(year)
+  current_year = 2016
+  if current_year - year >= 18
+    return "yes"
+  else
+    return "no"
+  end
+end
+
+puts old_enough_to_vote?(1993)
+puts old_enough_to_vote?(1998)
+puts old_enough_to_vote?(2000)
