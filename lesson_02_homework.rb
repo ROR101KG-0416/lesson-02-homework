@@ -46,11 +46,11 @@ end
 
 # Fix Broken Code
 
-def full_name(f, l)
-  puts f + l
+def full_name(first_name, last_name)
+  return first_name + " " + last_name
 end
 
-puts full_nam("bubba", "chuck")
+puts full_name("bubba", "chuck")
 
 
 # Coding
