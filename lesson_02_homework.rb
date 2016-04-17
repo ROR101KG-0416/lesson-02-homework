@@ -44,6 +44,16 @@ def full_name(first_name, last_name, title)
   return name
 end
 
+puts full_name("John", "Doe", "Mr.")
+
+puts full_name(nil, "Doe", "Mr.")
+
+puts full_name("John", "Doe", nil)
+
+puts full_name("John", nil, nil)
+
+puts full_name(nil, nil, nil)
+
 # Fix Broken Code
 
 def full_name(first_name, last_name)
