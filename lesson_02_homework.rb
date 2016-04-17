@@ -57,14 +57,30 @@ puts full_name("bubba", "chuck")
 
 
 ## Enter your code for your 'add' method below
+def add(first_number, second_number)
+  sum = first_number + second_number
+  return sum
+end
 
-
-
+puts add(3, 4)
 
 ## Enter the code for you 'join_strings' method below
+def join_strings(first_string, second_string)
+  merge = first_string + " " + second_string
+  return merge
+end
 
-
-
-
+puts join_strings("Hello", "world")
 
 ## Enter your 'old_enough_to_vote?' method below
+def old_enough_to_vote?(birth_year)
+  if birth_year < 1998
+    puts "yes"
+  else
+    puts "no"
+  end
+end
+
+puts old_enough_to_vote?(1997)
+
+puts old_enough_to_vote?(1998)
