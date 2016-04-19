@@ -43,8 +43,11 @@ puts full_name("bubba", "chuck")
 
 
 ## Enter your code for your 'add' method below
+def add(first_number, second_number)
+  first_number + second_number
+end
 
-
+puts add(456,897)
 
 
 ## Enter the code for you 'join_strings' method below
