@@ -32,8 +32,8 @@ end
 
 # Fix Broken Code
 
-def full_name(f, l)
-  puts f + l
+def full_name(first_name, last_name)
+  puts first_name + last_name
 end
 
 puts full_name("bubba", "chuck")
