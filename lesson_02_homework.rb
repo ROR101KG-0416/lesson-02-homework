@@ -63,3 +63,12 @@ puts join_strings(name_one, name_two)
 
 
 ## Enter your 'old_enough_to_vote?' method below
+
+age = 22
+
+if age >= 18
+  puts "Yes"
+else
+  puts "No"
+end
+
