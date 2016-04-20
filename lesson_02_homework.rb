@@ -51,8 +51,14 @@ puts add(456,897)
 
 
 ## Enter the code for you 'join_strings' method below
+def join_strings(name_one, name_two)
+  "#{name_one} #{name_two}"
+end
 
+name_one = "Madelynn"
+name_two = "Jessica"
 
+puts join_strings(name_one, name_two)
 
 
 
