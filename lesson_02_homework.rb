@@ -67,8 +67,8 @@ puts join_strings(name_one, name_two)
 age = 22
 
 if age >= 18
-  puts "Yes"
+  return "Yes"
 else
-  puts "No"
+  return "No"
 end
 
