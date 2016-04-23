@@ -33,7 +33,7 @@ end
 # Fix Broken Code
 
 def full_name(first_name, last_name)
-  puts first_name + last_name
+  first_name + last_name
 end
 
 puts full_name("bubba", "chuck")
@@ -64,11 +64,13 @@ puts join_strings(name_one, name_two)
 
 ## Enter your 'old_enough_to_vote?' method below
 
-age = 22
-
-if age >= 18
-  return "Yes"
-else
-  return "No"
+def old_enough_to_vote?(age)
+  if age >= 18
+    return "Yes"
+  else
+    return "No"
+  end
 end
+
+puts old_enough_to_vote?(22)
 
