@@ -37,8 +37,8 @@ puts full_name('Stephen', 'Bienkiewicz', 'Mr.')
 
 # Fix Broken Code
 
-def full_name(f, l)
-  f + l
+def full_name(firstName, lastName)
+  firstName + lastName
 end
 
 puts full_name("bubba", "chuck")
@@ -69,9 +69,9 @@ puts join_strings("honda", " civic")
 
 def old_enough_to_vote(year)
   if year <= 1998
-    'Wow, you are old enough to vote!'
+    'yes'
   else
-    'Come back when you are older!'
+    'no'
   end
 end
 
