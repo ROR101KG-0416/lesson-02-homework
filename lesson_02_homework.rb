@@ -46,18 +46,18 @@ end
 
 puts full_name("John", "Doe", "Mr.")
 
-puts full_name(nil, "Doe", "Mr.")
+puts full_name(false, "Doe", "Mr.")
 
 puts full_name("John", "Doe", nil)
 
-puts full_name("John", nil, nil)
+puts full_name("John", false, nil)
 
-puts full_name(nil, nil, nil)
+puts full_name(false, nil, nil)
 
 # Fix Broken Code
 
 def full_name(first_name, last_name)
-  return first_name + " " + last_name
+  first_name + " " + last_name
 end
 
 puts full_name("bubba", "chuck")
@@ -68,16 +68,14 @@ puts full_name("bubba", "chuck")
 
 ## Enter your code for your 'add' method below
 def add(first_number, second_number)
-  sum = first_number + second_number
-  return sum
+  first_number + second_number
 end
 
 puts add(3, 4)
 
 ## Enter the code for you 'join_strings' method below
 def join_strings(first_string, second_string)
-  merge = first_string + " " + second_string
-  return merge
+  first_string + " " + second_string
 end
 
 puts join_strings("Hello", "world")
@@ -85,9 +83,9 @@ puts join_strings("Hello", "world")
 ## Enter your 'old_enough_to_vote?' method below
 def old_enough_to_vote?(birth_year)
   if birth_year < 1998
-    puts "yes"
+    "yes"
   else
-    puts "no"
+    "no"
   end
 end
 
