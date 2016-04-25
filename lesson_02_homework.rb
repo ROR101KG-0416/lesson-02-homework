@@ -46,11 +46,11 @@ puts full_name(nil,"caires",nil)
 
 # Fix Broken Code
 
-def full_name(f, l)
-  puts f + ' ' + l
+def full_name(first_name, last_name)
+  first_name + ' ' + last_name
 end
 
-full_name("bubba", "chuck")
+puts full_name("bubba", "chuck")
 
 
 # Coding
@@ -58,12 +58,10 @@ full_name("bubba", "chuck")
 
 ## Enter your code for your 'add' method below
 def add(num1, num2)
-  return num1 + num2
+  num1 + num2
 end
 
-sum = add(100,22)
-
-puts sum
+puts add(100,22)
 
 ## Enter the code for you 'join_strings' method below
 def join_string (string1, string2)
