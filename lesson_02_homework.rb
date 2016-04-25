@@ -73,12 +73,22 @@ puts full_name("Simon", "", "")
 # define method full_name (with 2 parameters)
 # change (f, l) to (first_name, last_name)
 # not technically an error but should have variables that make sense
-def full_name(first_name, last_name)
+
+# def full_name(first_name, last_name)
+
 # set name to nil
-    name = nil
+
+#    name = nil
+
 # code in where names are passed
 # puts should go after end
-    name = first_name + " " + last_name
+
+#    name = first_name + " " + last_name
+# end
+
+# This is the BETTER way: no need to store variable if just want to return result
+def full_name(first_name, last_name)
+  first_name + " " + last_name
 end
 
 # typo: missing e on full_name
@@ -108,10 +118,8 @@ puts add(5, 7)
 def add(num1, num2)
 # add parameters num1 and num2 and store the value in variable sum
   sum = num1 + num2
-# print the value of sum
-  puts sum
 end
-
+puts add(8, 12)
 
 # 2. Write a method, `join_strings` that does the following: 
 #   - takes two string values as parameters and joins them together with a space in between, 
@@ -138,17 +146,20 @@ def oldEnough (year)
   if year <= 1998
 # person is old enough to vote, 
 # print out 'You are allowed to vote'
-    puts 'You are allowed to vote'
+    'You are allowed to vote'
 # otherwise
   else
 # if year is NOT less than or equal to 1998
 # person is NOT old enough to vote, 
 # print out 'You are to young to vote :('
-    puts 'You are too young to vote :('
+    'You are too young to vote :('
 # end conditional
   end
 # end method
 end
 # run method with birth year 2001
 puts oldEnough(2001)
+puts oldEnough(1996)
+puts oldEnough(1998)
+
 
