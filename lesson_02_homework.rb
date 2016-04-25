@@ -1,12 +1,12 @@
 
 #def=Method, assigning to full_name 3 different variables -->
 def full_name(first_name, last_name, title)
-  <!-- # Example comment line
+  # <!-- # Example comment line
 
   #name assigned as nil -->
   name = nil
   
-  <!-- #setting the first scenario/condition when running code,if it comes true then puts the tittle first then space, first name, space then last name. -->
+  # <!-- #setting the first scenario/condition when running code,if it comes true then puts the tittle first then space, first name, space then last name. -->
   if title && first_name && last_name
     name = title + " " + first_name + " " + last_name
  # <!-- this send case is only when given title and last name -->
@@ -31,8 +31,8 @@ end
 # Fix Broken Code
 
 
-def full_name(f, l)
-  puts f + " " + l
+def full_name(name, lastname)
+   name + " " + lastname
 end
 
 puts full_name("bubba", "chuck")
@@ -40,13 +40,10 @@ puts full_name("bubba", "chuck")
 
 # Coding
 
-1
-  def add(num1,num2)
-   
+
+  def add(num1,num2) 
     total = num1 + num2
     total
- 
-
   end 
 
   puts add(1,2)
@@ -55,36 +52,32 @@ puts full_name("bubba", "chuck")
 
 
 
-2. Write a method, `join_strings` that does the following: 
-  - takes two string values as parameters and joins them together with a space in between, returning the result. 
-  - For example `join_strings("hello", "dolly")` should return `"hello dolly"`
+
+  # - takes two string values as parameters and joins them together with a space in between, returning the result. 
+  # - For example `join_strings("hello", "dolly")` should return `"hello dolly"`
 
 
-def join_strings(a, b)
-  puts a + " " + b
+def join_strings(name, lastname)
+  a + " " + b
 end
 
 puts join_strings("Handsome", "Man")
 
 
-3. Write a method called 'old_enough_to_vote?' that does the following:
-  - Takes a integer year as a parameter and returns a "yes" if a person born in that year is old enough to vote or returns "no" if the person is not old enough to vote
+# 3. Write a method called 'old_enough_to_vote?' that does the following:
+#   - Takes a integer year as a parameter and returns a "yes" if a person born in that year is old enough to vote or returns "no" if the person is not old enough to vote
 
 def old_enough_to_vote?(i)
 
   if i <= 1999
 
-   puts "yes"
-
+    "yes"
   else 
- 
-   puts "no" 
-
+    "no" 
   end
-
 end   
 
-  puts old_enough_to_vote?(1988)
+puts old_enough_to_vote?(1988)
 
 
 # Reading/Active Learning Assignment
