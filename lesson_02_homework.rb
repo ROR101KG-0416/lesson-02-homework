@@ -33,8 +33,8 @@ end
 
 # Fix Broken Code
 
-def full_name(f, l)
-  puts f +" "+ l
+def full_name(name, last_name)
+   name +" "+ last_name
 end
 
 puts full_name("bubba", "chuck")
@@ -45,21 +45,20 @@ puts full_name("bubba", "chuck")
 
 ## Enter your code for your 'add' method below
 
- def add( first_parameter , second_parameter)
-    sum_1 = first_parameter + second_parameter
-    sum_1
-  end
+ def add( first_number , second_number)
+   first_number + second_number
+ end
 
-   puts  add(4,8)
+ puts  add(4,8)
 
 
 ## Enter the code for you 'join_strings' method below
 
-def joint_strings(s , t)
-    puts s+" "+t
-  end
+def joint_strings(string_1 , string_2)
+  string_1 +" "+ string_2
+end
 
-    puts joint_strings("jane", "john")
+puts joint_strings("jane", "john")
 
 
 
@@ -68,9 +67,10 @@ def joint_strings(s , t)
 def old_enought_to_vote?(year)
    current_year = 2016
   if year <= current_year - 18
-   puts 'yes'
+    'yes'
   else
-   puts 'no'
- end
+    'no'
+  end
 end
-  puts old_enought_to_vote?('1999'.to_i)
+
+puts old_enought_to_vote?('1999'.to_i)
