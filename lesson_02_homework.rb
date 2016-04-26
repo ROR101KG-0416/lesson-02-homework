@@ -46,9 +46,9 @@ def full_name(first_name, last_name, title)
 end
 
 puts full_name("Simon", "Fuzzyface", "Mr.")
-puts full_name("Mr.", "Fuzzyface", "")
-puts full_name("Simon", "Fuzzyface", "")
-puts full_name("Simon", "", "")
+puts full_name("Mr.", "Fuzzyface", nil)
+puts full_name("Simon", "Fuzzyface", nil)
+puts full_name("Simon", nil, nil)
 
 
 # ```
