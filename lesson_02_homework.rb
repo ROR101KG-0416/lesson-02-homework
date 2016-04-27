@@ -39,7 +39,7 @@ puts full_name(nil, 'noriega', 'mr')
 #Fix Broken Code
 
 def full_name(first_name, last_name)
-  puts first_name.capitalize + " " + last_name.capitalize
+  first_name.capitalize + " " + last_name.capitalize
   #I added the .capitlize method to capitalize the first letter of the names
 end
 
@@ -54,9 +54,7 @@ def add(number_1, number_2)
   number_1 + number_2
 end
 
-result = add(5, 10)
-
-puts result
+puts add(5, 10)
 
 
 ## Enter the code for you 'join_strings' method below
@@ -70,9 +68,9 @@ puts join_strings("hello", "dolly")
 ## Enter your 'old_enough_to_vote?' method below
 def old_enough_to_vote(year)
   if year <= 1998
-    return "yes"
+    "yes"
   else 
-    return "no"  
+    "no"  
   end
 end
 
