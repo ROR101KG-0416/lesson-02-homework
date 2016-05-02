@@ -55,11 +55,11 @@ puts favorite_words("Good", "Luck")
 ## Enter your 'old_enough_to_vote?' method below
 def old_enough_to_vote(year)
   if year >= 1998
-    puts "You are good to vote"
+     "You are good to vote"
   elsif year <= 1950
-    puts "You are very old to vote"
+    "You are very old to vote"
   else
-    puts "Sorry, you are not old enought to vote"
+    "Sorry, you are not old enought to vote"
   end
 end
 
